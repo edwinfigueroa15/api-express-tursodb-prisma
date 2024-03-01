@@ -17,7 +17,7 @@ export const getById = async (req, res) => {
                 id: parseInt(req.params.id)
             }
         })
-        if(!response) return res.status(404).json({ data: null, status: 'error', message: 'not_found' })
+        if (!response) return res.status(404).json({ data: null, status: 'error', message: 'not_found' })
         return res.status(200).json({ data: response, status: 'success', message: '' })
 
     } catch (error) {
@@ -59,7 +59,7 @@ export const remove = async (req, res) => {
                 id: parseInt(req.params.id)
             }
         })
-        if(!response) return res.status(404).json({ data: null, status: 'error', message: 'not_found' })
+        if (!response) return res.status(404).json({ data: null, status: 'error', message: 'not_found' })
         return res.status(200).json({ data: response, status: 'success', message: '' })
 
     } catch (error) {
